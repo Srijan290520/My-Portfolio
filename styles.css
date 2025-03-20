@@ -544,4 +544,43 @@ main {
         width: 90%;
         height: auto;
     }
+    .project-card {
+        width: 95%; /* Make the cards wider */
+        margin-left: auto; /* Center the cards */
+        margin-right: auto;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .project-card-content {
+        padding: 20px;
+    }
+
+    .project-card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-card-content p {
+        font-size: 0.9rem;
+    }
+    .timeline::before {
+        display: none; /* Remove the vertical line */
+    }
+
+    .timeline-item {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .timeline-item {
+        padding: 1px;
+    }
+    .experience-card {
+        text-align: left; /* Align text left */
+    }
+
+
 }
