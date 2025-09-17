@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
@@ -16,10 +16,10 @@
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="#home" class="text-xl font-semibold text-white">My Portfolio</a>
             <nav>
-                <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <button id="hamburger-btn" class="text-white focus:outline-none" aria-label="Toggle Navigation">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
-                <ul class="md:flex space-x-8" id="nav-links">
+                <ul class="hidden md:flex space-x-8" id="nav-links">
                     <li><a href="#home" class="nav-link active-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -31,17 +31,16 @@
     </header>
 
     <main class="container mx-auto px-4 py-8">
-        <section id="home" class="page-section flex  items-center justify-center  py-16">
+        <section id="home" class="page-section flex flex-col md:flex-row items-center justify-center py-16">
             <div class="md:w-1/2 text-center md:text-left">
                 <h1 class="text-4xl font-bold text-gray-800 mb-4">Hello, I'm <span class="text-indigo-400">Srijan Pusala</span></h1>
                 <p class="text-lg text-gray-700 mb-6">I'm a Web Developer</p>
                 <p class="text-lg text-gray-700 mb-6">With a passion for creating interactive and dynamic web applications, I specialize in front-end development and have a strong background in back-end technologies.</p>
                 <p class="text-lg text-gray-700 mb-6">I enjoy solving complex problems and continuously learning new skills to stay updated with the latest industry trends.</p>
-                <a href="#footer" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-md hover:bg-indigo-700 transition duration-300 transition-opacity hover:opacity-90
-                           font-semibold text-lg shadow-md">Contact Me</a>
+                <a href="#footer" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-md hover:bg-indigo-700 transition duration-300 transition-opacity hover:opacity-90 font-semibold text-lg shadow-md">Contact Me</a>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <img src="Srijan.png" alt="Srijan Pusala" class="rounded-lg shadow-lg  transition-transform hover:scale-102">
+                <img src="https://srijan290520.github.io/My-Portfolio/Srijan.png" alt="Srijan Pusala" class="rounded-lg shadow-lg transition-transform hover:scale-105 w-4/5 md:w-full max-w-sm">
             </div>
         </section>
 
@@ -49,13 +48,13 @@
             <h2 class="text-3xl font-semibold mb-8 text-center">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2 flex justify-center">
-                    <img src="About.jpg" alt="About Me" class="rounded-lg shadow-lg  transition-transform hover:scale-102">
+                    <img src="https://srijan290520.github.io/My-Portfolio/About.jpg" alt="About Me" class="rounded-lg shadow-lg transition-transform hover:scale-102">
                 </div>
-                <div class="md:w-1/2 ">
-                    <p class="text-lg text-gray-700 mb-4 ">
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-700 mb-4">
                         Driven Web Developer with a proven track record at Sinara Global LLP, where I enhanced website functionality and user experience, significantly boosting operational efficiency.
                     </p>
-                    <p class="text-lg text-gray-700 mb-4 ">
+                    <p class="text-lg text-gray-700 mb-4">
                         Skilled in Python and PHP programming, alongside a knack for interactive design, I excel in turning complex problems into seamless solutions. Demonstrates exceptional problem-solving abilities and a passion for technology advancement.
                     </p>
                 </div>
@@ -67,14 +66,27 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="experience-card">
+                        <div class="experience-icon">🔧</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Application Support</h3>
+                        <p class="text-gray-700 mb-2"><strong>Company:</strong> MedUnited, Hyderabad, India</p>
+                        <p class="text-gray-700 mb-2"><strong>Duration:</strong> April 2024 - Present</p>
+                        <ul class="list-disc list-inside text-gray-700 ml-4">
+                            <li>Providing prompt and effective technical assistance and troubleshooting for application-related inquiries.</li>
+                            <li>Collaborating with cross-functional technical teams to efficiently escalate and resolve complex user issues.</li>
+                            <li>Resolved complex technical issues for end-users, enhancing problem-solving and communication skills.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="experience-card">
                         <div class="experience-icon">💻</div>
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Web Developer & IT Support</h3>
-                        <p class="text-gray-700 mb-2"><strong class="">Company:</strong> Sinara Global LLP, Hyderabad, India</p>
-                        <p class="text-gray-700 mb-2"><strong class="">Duration:</strong> 07/2024 - Current</p>
+                        <p class="text-gray-700 mb-2"><strong>Company:</strong> Sinara Global LLP, Hyderabad, India</p>
+                        <p class="text-gray-700 mb-2"><strong>Duration:</strong> July 2023 - April 2024</p>
                         <ul class="list-disc list-inside text-gray-700 ml-4">
-                            <li>Provided technical assistance and troubleshooting to Sinara Global employees.</li>
-                            <li>Regularly updated and maintained Sinara Global's website.</li>
-                            <li>Developed software solutions to enhance organizational efficiency.</li>
+                            <li>Led development and maintenance of the company website, implementing significant design and technical optimizations.</li>
+                            <li>Designed and developed a comprehensive CRM system to streamline customer relationship processes.</li>
+                            <li>Provided essential technical assistance and troubleshooting for internal IT systems.</li>
                         </ul>
                     </div>
                 </div>
@@ -82,8 +94,8 @@
                     <div class="experience-card">
                         <div class="experience-icon">🔍</div>
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Manual Tester</h3>
-                        <p class="text-gray-700 mb-2"><strong class="">Company:</strong> Optivent Group, Gudivada, India</p>
-                        <p class="text-gray-700 mb-2"><strong class="">Duration:</strong> 10/2023 - 03/2024</p>
+                        <p class="text-gray-700 mb-2"><strong>Company:</strong> Optivent Group, Gudivada, India</p>
+                        <p class="text-gray-700 mb-2"><strong>Duration:</strong> October 2022 - March 2023</p>
                         <ul class="list-disc list-inside text-gray-700 ml-4">
                             <li>Acquired foundational knowledge of manual testing processes and tools.</li>
                             <li>Gained hands-on experience with JIRA software for project management.</li>
@@ -95,22 +107,22 @@
         </section>
 
         <section id="work" class="page-section py-16">
-            <h2 class="text-3xl font-semibold    mb-8 text-center">My Projects</h2>
+            <h2 class="text-3xl font-semibold mb-8 text-center">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <div class="project-card">
-                    <img src="CRM.png" alt="CRM System" class="w-full">
+                    <img src="https://srijan290520.github.io/My-Portfolio/CRM.png" alt="CRM System" class="w-full">
                     <div class="project-card-content">
                         <h3 class="text-xl font-semibold text-gray-800">CRM System for Sinara Global LLP</h3>
                         <p class="text-gray-600">Developing a CRM system to streamline customer relationship management processes, enhancing efficiency and productivity.</p>
-                        <a href="https://gitlab.com/SrijanPusala/sinarabasecrm" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center gap-2 font-medium">View Project <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                        <a href="https://github.com/Srijan290520" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center gap-2 font-medium">View Project <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="HRM.png" alt="HR Monitoring System" class="w-full">
+                    <img src="https://srijan290520.github.io/My-Portfolio/HRM.png" alt="HR Monitoring System" class="w-full">
                     <div class="project-card-content">
                         <h3 class="text-xl font-semibold text-gray-800">HR Team Monitoring System for Sinara Global LLP</h3>
                         <p class="text-gray-600">Developing and implementing a monitoring system for the HR team to track key metrics and improve team performance.</p>
-                        <a href="https://gitlab.com/SrijanPusala/hrms" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center gap-2 font-medium">View Project <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                        <a href="https://github.com/Srijan290520" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center gap-2 font-medium">View Project <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -126,16 +138,13 @@
                 <a href="https://www.linkedin.com/in/srijan-p-8235351a5/" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://gitlab.com/SrijanPusala" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-gitlab"></i>
+                <a href="https://github.com/Srijan290520" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
                 </a>
-                <br>
-                <span >
-                    Gmail: srijanpusala@gmail.com
-                </span>
-                <span  >
-                    Contact: +917702780050
-                </span>
+                <div class="mt-4 space-y-1">
+                    <div>Gmail: srijanpusala@gmail.com</div>
+                    <div>Contact: +917702780050</div>
+                </div>
             </div>
         </div>
     </footer>
@@ -149,6 +158,7 @@
 
             hamburgerBtn.addEventListener('click', () => {
                 navMenu.classList.toggle('active');
+                 navMenu.classList.toggle('hidden');
             });
 
             function updateActiveNavLink() {
@@ -170,27 +180,30 @@
             }
 
             window.addEventListener('scroll', updateActiveNavLink);
+            updateActiveNavLink(); // Initial check
 
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
+                anchor.addEventListener('click', function(e) {
                     e.preventDefault();
-                    const targetId = this.getAttribute('href').slice(1);
-                    const targetElement = document.getElementById(targetId);
+                    
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        navMenu.classList.add('hidden');
+                    }
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
 
                     if (targetElement) {
-                         targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    } else  {
-                        document.querySelector('#footer').scrollIntoView({
+                        targetElement.scrollIntoView({
                             behavior: 'smooth'
                         });
                     }
                 });
             });
-
-
         });
     </script>
 </body>
 </html>
+
+
